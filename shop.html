@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digilog — tools, boards and components for modern makers." />
+  <link rel="canonical" href="https://digilog.site/shop.html" />
+  <title>Digilog — Build What’s Next</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="product-images.css?v=3" /><link rel="stylesheet" href="responsive-fixes.css?v=4">
+<link rel="stylesheet" href="chat.css"></head>
+<body>
+  <div class="announcement">Free standard shipping on orders over $75 <span>•</span> 30-day easy returns</div>
+
+  <header>
+    <div class="header-main container">
+      <button class="icon-button menu-button" aria-label="Open menu">☰</button>
+      <a class="brand" href="index.html"><span>DIGILOG</span></a>
+      <form class="search" id="search-form">
+        <input id="search-input" type="search" placeholder="Search boards, tools, sensors..." aria-label="Search products" />
+        <button aria-label="Submit search">⌕</button>
+      </form>
+      <div class="header-actions">
+        <button class="action-button" aria-label="Account"><span>♙</span><small>Account</small></button>
+        <button class="action-button" aria-label="Wishlist"><span>♡</span><small>Wishlist</small></button>
+        <button class="action-button cart-toggle" aria-label="Cart"><span>▱</span><small>Cart</small><b id="cart-count">0</b></button>
+      </div>
+    </div>
+    <nav class="nav container" aria-label="Main navigation"><a href="index.html">Company</a>
+      <a href="#products">New & Trending</a><a href="#categories">Development Boards</a><a href="#categories">Sensors & Modules</a><a href="#categories">Robotics</a><a href="#products">Test Equipment</a><a href="#products">Tools & Soldering</a><a href="#products">3D Printing</a><a class="sale-link" href="#products">Clearance</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-copy">
+        <span class="eyebrow">BUILT FOR CURIOUS MINDS</span>
+        <h1>Big ideas start<br>with tiny parts.</h1>
+        <p>Thoughtfully sourced electronics, dependable tools, and project-ready kits—all in one place.</p>
+        <div class="hero-buttons"><a class="button primary" href="#products">Shop best sellers <span>→</span></a><a class="button ghost" href="#categories">Browse categories</a></div>
+        <div class="hero-proof"><div class="avatars"><i></i><i></i><i></i></div><div><strong>4.9/5</strong><span>from 2,400+ makers</span></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Featured electronics kit illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="board">
+          <span class="board-label">VB · CORE</span><div class="chip"><i></i><i></i><i></i><i></i></div>
+          <div class="port"></div><div class="pin-row top"></div><div class="pin-row bottom"></div>
+          <span class="led l1"></span><span class="led l2"></span><span class="led l3"></span>
+        </div>
+        <div class="float-card fc-one"><span>⚡</span><div><small>READY TO SHIP</small><strong>24-hour dispatch</strong></div></div>
+        <div class="float-card fc-two"><span>✓</span><div><small>QUALITY CHECKED</small><strong>Maker-approved</strong></div></div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefit-grid"><div><span>⌁</span><p><strong>Fast, tracked delivery</strong><small>Free over $75</small></p></div><div><span>♢</span><p><strong>Tested components</strong><small>Quality you can trust</small></p></div><div><span>↻</span><p><strong>Easy returns</strong><small>30-day return window</small></p></div><div><span>◌</span><p><strong>Real maker support</strong><small>Help from humans</small></p></div></div>
+    </section>
+
+    <section class="section container" id="categories">
+      <div class="section-heading"><div><span class="eyebrow dark">FIND YOUR PARTS</span><h2>Shop by category</h2></div><a href="#products">View all categories →</a></div>
+      <div class="category-grid">
+        <a class="category c1" href="#products"><div class="category-art"><span class="mini-board"></span></div><strong>Development boards</strong><small>126 products</small></a>
+        <a class="category c2" href="#products"><div class="category-art"><span class="sensor-eye"></span></div><strong>Sensors & modules</strong><small>340 products</small></a>
+        <a class="category c3" href="#products"><div class="category-art"><span class="motor"></span></div><strong>Robotics & motors</strong><small>184 products</small></a>
+        <a class="category c4" href="#products"><div class="category-art"><span class="meter">8.8.8.8</span></div><strong>Test equipment</strong><small>92 products</small></a>
+        <a class="category c5" href="#products"><div class="category-art"><span class="iron"></span></div><strong>Tools & soldering</strong><small>218 products</small></a>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="container">
+        <div class="section-heading"><div><span class="eyebrow dark">MAKER FAVORITES</span><h2>Best sellers</h2></div><div class="product-tabs"><button class="active" data-filter="all">All</button><button data-filter="boards">Boards</button><button data-filter="tools">Tools</button><button data-filter="sensors">Sensors</button></div></div>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="center"><button class="button outline" id="show-more">Explore all products <span>→</span></button></div>
+      </div>
+    </section>
+
+    <section class="project-banner container">
+      <div><span class="eyebrow">STARTER KIT OF THE MONTH</span><h2>Build a smarter room.</h2><p>Everything you need to automate lights, track climate, and learn connected electronics—no experience required.</p><a class="button light" href="#products">Discover the kit →</a></div>
+      <div class="kit-art"><span class="wire w1"></span><span class="wire w2"></span><div class="kit-board"><b>VOLT<br>HOME</b><i></i><i></i><i></i></div><div class="bulb">✦</div></div>
+    </section>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner"><div><span class="eyebrow dark">STAY IN THE LOOP</span><h2>Projects, parts & bright ideas.</h2><p>Fresh tutorials, product drops, and members-only offers. Sent occasionally.</p></div><form id="newsletter-form"><div><input type="email" required placeholder="Your email address"><button>Join the club →</button></div><small>By subscribing, you agree to our privacy policy.</small></form></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand"><a class="brand light-brand" href="index.html"><span>DIGILOG</span></a><p>Your bench-side source for electronics, robotics, tools, and creative technology.</p></div>
+      <div><h3>Shop</h3><a href="#products">New arrivals</a><a href="#products">Best sellers</a><a href="#categories">Development boards</a><a href="#categories">Sensors</a><a href="#products">Tools</a></div>
+      <div><h3>Help</h3><a href="support.html#tracking">Order tracking</a><a href="support.html#shipping">Shipping & returns</a><a href="support.html#faq">FAQs</a><a href="support.html#warranty">Warranty</a><a href="support.html#contact">Contact us</a></div>
+      <div><h3>Customer care</h3><p>digilogmicro@info.com</p><p>Live chat available</p><p>Mon–Fri, 9:00 AM–5:00 PM ET</p><p>Replies within one business day</p></div>
+    </div>
+    <div class="container footer-bottom"><div><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div><span>USD $</span></div>
+  </footer>
+
+  <aside class="cart-drawer" aria-hidden="true"><div class="cart-head"><h2>Your cart</h2><button class="cart-close">×</button></div><div id="cart-items" class="cart-items"><p class="empty-cart">Your cart is ready for a new project.</p></div><div class="cart-footer"><div><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><button class="button primary checkout">Checkout</button></div></aside>
+  <div class="overlay"></div><div class="toast" role="status"></div>
+  <script src="catalog-data.js"></script>
+  <script src="script.js"></script>
+<script src="chat.js"></script></body>
+</html>
+

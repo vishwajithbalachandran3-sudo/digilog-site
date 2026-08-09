@@ -1,0 +1,7 @@
+const cart=JSON.parse(localStorage.getItem('digilog-cart')||'[]');
+if(!cart.length)window.location.replace('shop.html');
+const subtotal=cart.reduce((sum,item)=>sum+item.price,0);const shipping=subtotal>=75?0:6.95;const tax=subtotal*.0825;const total=subtotal+shipping+tax;
+document.querySelector('#checkout-items').innerHTML=cart.map(item=>`<div class="checkout-item"><div class="checkout-thumb">D</div><div><strong>${item.name}</strong><small>Qty: 1</small></div><b>$${item.price.toFixed(2)}</b></div>`).join('');
+document.querySelector('#checkout-subtotal').textContent=`$${subtotal.toFixed(2)}`;document.querySelector('#shipping').textContent=shipping?`$${shipping.toFixed(2)}`:'Free';document.querySelector('#tax').textContent=`$${tax.toFixed(2)}`;document.querySelector('#checkout-total').textContent=`$${total.toFixed(2)}`;document.querySelector('#pay-total').textContent=`• $${total.toFixed(2)}`;
+document.querySelector('#order-form').addEventListener('submit',e=>{e.preventDefault();const button=e.target.querySelector('.place-order');button.disabled=true;button.textContent='Processing securely…';setTimeout(()=>{const order=`DL-${new Date().getFullYear()}-${Math.random().toString(36).slice(2,8).toUpperCase()}`;localStorage.removeItem('digilog-cart');e.target.hidden=true;document.querySelector('.checkout-title').hidden=true;document.querySelector('#order-number').textContent=order;document.querySelector('#order-success').hidden=false;document.querySelector('.order-summary').style.opacity='.55';window.scrollTo({top:0,behavior:'smooth'})},900)});
+
