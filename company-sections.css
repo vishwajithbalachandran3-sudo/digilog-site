@@ -57,3 +57,5 @@
 .email-submit{background:var(--contrast-gold);color:#173237}
 .business-footer{background:#061b21}
 @media(max-width:600px){#products,#quality,#why-us{padding-inline:14px}.business-hero{background:var(--contrast-navy)}.utility{padding-inline:14px}.client-strip{border-bottom-width:3px}}
+.main-nav nav.open{top:75px}
+@media(max-width:600px){.main-nav nav.open{top:65px}}
