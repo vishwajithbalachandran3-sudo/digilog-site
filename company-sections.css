@@ -138,3 +138,11 @@
 .business-footer .footer-top>div a,.business-footer .footer-top>div span{color:#abc1be}
 @media(max-width:600px){.main-nav nav.open{background:#081d23;border-color:var(--dark-border)}.business-hero{background:#071b21}}
 .main-nav nav{margin-left:auto;margin-right:0;justify-content:flex-end}
+.main-nav{height:92px}
+.business-logo img{display:block;width:auto;height:64px;object-fit:contain}
+.main-nav nav{gap:clamp(28px,3vw,52px);font-size:15px;font-weight:700}
+.main-nav nav a{letter-spacing:.015em}
+.footer-logo img{height:76px;filter:brightness(1.16) saturate(1.08)}
+.main-nav nav.open{top:92px}
+@media(max-width:900px){.main-nav{height:78px}.business-logo img{height:54px}.main-nav nav.open{top:78px}}
+@media(max-width:620px){.main-nav{height:70px}.business-logo img{height:46px}.main-nav nav.open{top:70px}.main-nav nav{font-size:16px;gap:18px}.footer-logo img{height:60px}}
