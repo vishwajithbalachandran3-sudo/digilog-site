@@ -92,3 +92,10 @@
 .contact-section{background:linear-gradient(120deg,#062b33,#0b535b)}
 @media(max-width:900px){.business-site .container,.company-block .container,.contact-section .container,.business-footer .container,#infrastructure .container,.team-section .container{width:min(calc(100% - 32px),1440px)}.hero-layout{grid-template-columns:1fr}.section-intro{grid-template-columns:100px 1fr}}
 @media(max-width:600px){.business-site .container,.company-block .container,.contact-section .container,.business-footer .container,#infrastructure .container,.team-section .container{width:calc(100% - 28px)}#products,#quality,#why-us{padding-inline:14px}.section-intro{display:block}.business-hero:after{display:none}}
+
+/* True full-width page structure */
+.business-site .container,.business-site .main-nav,.company-block .container,.contact-section .container,.business-footer .container,#infrastructure .container,.team-section .container{width:100%;max-width:none;padding-left:clamp(22px,4vw,72px);padding-right:clamp(22px,4vw,72px)}
+#products,#quality,#why-us{width:100%;max-width:none;padding-left:clamp(22px,4vw,72px);padding-right:clamp(22px,4vw,72px)}
+.product-intro{grid-template-columns:150px minmax(0,1fr)}
+.product-intro h2{max-width:820px}
+@media(max-width:600px){.business-site .container,.business-site .main-nav,.company-block .container,.contact-section .container,.business-footer .container,#infrastructure .container,.team-section .container,#products,#quality,#why-us{width:100%;padding-left:18px;padding-right:18px}.product-intro{display:block}}
